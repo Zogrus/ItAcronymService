@@ -121,7 +121,7 @@ export default function Home() {
         {/* フッター */}
         <footer className="text-center mt-16 text-gray-500 text-sm">
           <p>IT略語即時参照サービス</p>
-          <p className="mt-1">130+ IT用語を収録</p>
+          <p className="mt-1">170+ IT用語を収録</p>
         </footer>
       </div>
     </div>

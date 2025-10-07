@@ -901,5 +901,299 @@
     "fullNameJa": "動的ホスト構成プロトコル",
     "description": "IPアドレスを自動割り当てするプロトコル",
     "related": "Network, IP, Router"
+  },
+  {
+    "acronym": "WASM",
+    "fullName": "WebAssembly",
+    "fullNameJa": "ウェブアセンブリ",
+    "description": "ブラウザで高速実行できるバイナリ形式の言語",
+    "related": "JavaScript, Performance, Rust"
+  },
+  {
+    "acronym": "WebGL",
+    "fullName": "Web Graphics Library",
+    "fullNameJa": "ウェブグラフィックスライブラリ",
+    "description": "ブラウザで3Dグラフィックスを描画するAPI",
+    "related": "Canvas, GPU, Three.js"
+  },
+  {
+    "acronym": "WebRTC",
+    "fullName": "Web Real-Time Communication",
+    "fullNameJa": "ウェブリアルタイム通信",
+    "description": "ブラウザ間でリアルタイム通信を実現する技術",
+    "related": "Video Call, P2P, Streaming"
+  },
+  {
+    "acronym": "WebGPU",
+    "fullName": "Web Graphics Processing Unit",
+    "fullNameJa": "ウェブGPU",
+    "description": "GPU処理をブラウザで実行する最新API",
+    "related": "WebGL, WASM, Graphics"
+  },
+  {
+    "acronym": "IndexedDB",
+    "fullName": "Indexed Database API",
+    "fullNameJa": "インデックスドデータベース",
+    "description": "ブラウザ内の大容量ストレージAPI",
+    "related": "localStorage, Browser, Storage"
+  },
+  {
+    "acronym": "localStorage",
+    "fullName": "Web Storage Local Storage",
+    "fullNameJa": "ローカルストレージ",
+    "description": "ブラウザに永続的にデータを保存する仕組み",
+    "related": "sessionStorage, IndexedDB, Cookie"
+  },
+  {
+    "acronym": "sessionStorage",
+    "fullName": "Web Storage Session Storage",
+    "fullNameJa": "セッションストレージ",
+    "description": "タブを閉じるまで有効なブラウザストレージ",
+    "related": "localStorage, Cookie, Browser"
+  },
+  {
+    "acronym": "Cookie",
+    "fullName": "HTTP Cookie",
+    "fullNameJa": "クッキー",
+    "description": "サーバーとやり取りする小さなデータ片",
+    "related": "Session, localStorage, HTTP"
+  },
+  {
+    "acronym": "Fetch API",
+    "fullName": "Fetch Application Programming Interface",
+    "fullNameJa": "フェッチAPI",
+    "description": "モダンなHTTP通信を行うJavaScript API",
+    "related": "AJAX, XHR, Promise"
+  },
+  {
+    "acronym": "XHR",
+    "fullName": "XMLHttpRequest",
+    "fullNameJa": "XML HTTP リクエスト",
+    "description": "AJAX通信の古い実装方式",
+    "related": "Fetch API, AJAX, HTTP"
+  },
+  {
+    "acronym": "Canvas",
+    "fullName": "HTML Canvas Element",
+    "fullNameJa": "キャンバス要素",
+    "description": "JavaScriptで2D/3D描画できるHTML要素",
+    "related": "WebGL, SVG, Graphics"
+  },
+  {
+    "acronym": "SVG",
+    "fullName": "Scalable Vector Graphics",
+    "fullNameJa": "スケーラブルベクターグラフィックス",
+    "description": "拡大しても劣化しないベクター形式の画像",
+    "related": "Canvas, XML, Vector"
+  },
+  {
+    "acronym": "URL",
+    "fullName": "Uniform Resource Locator",
+    "fullNameJa": "統一資源位置指定子",
+    "description": "Web上のリソースの場所を示すアドレス",
+    "related": "URI, HTTP, Domain"
+  },
+  {
+    "acronym": "URI",
+    "fullName": "Uniform Resource Identifier",
+    "fullNameJa": "統一資源識別子",
+    "description": "リソースを一意に識別する文字列",
+    "related": "URL, URN, Web"
+  },
+  {
+    "acronym": "SPA",
+    "fullName": "Single Page Application",
+    "fullNameJa": "シングルページアプリケーション",
+    "description": "1ページで動的に切り替わるWebアプリ",
+    "related": "React, Vue, CSR"
+  },
+  {
+    "acronym": "MPA",
+    "fullName": "Multi Page Application",
+    "fullNameJa": "マルチページアプリケーション",
+    "description": "複数ページで構成される従来型のWebアプリ",
+    "related": "SPA, SSR, Traditional"
+  },
+  {
+    "acronym": "Polyfill",
+    "fullName": "Polyfill Script",
+    "fullNameJa": "ポリフィル",
+    "description": "古いブラウザで新機能を使えるようにするコード",
+    "related": "Babel, Transpile, Browser"
+  },
+  {
+    "acronym": "Transpile",
+    "fullName": "Source-to-Source Compilation",
+    "fullNameJa": "トランスパイル",
+    "description": "ソースコードを別バージョンに変換すること",
+    "related": "Babel, TypeScript, Polyfill"
+  },
+  {
+    "acronym": "Babel",
+    "fullName": "Babel JavaScript Compiler",
+    "fullNameJa": "バベルコンパイラ",
+    "description": "最新JSを古いブラウザ対応コードに変換",
+    "related": "Transpile, ESNext, Polyfill"
+  },
+  {
+    "acronym": "ESM",
+    "fullName": "ECMAScript Modules",
+    "fullNameJa": "ECMAスクリプトモジュール",
+    "description": "JavaScriptの標準モジュールシステム",
+    "related": "CommonJS, import, export"
+  },
+  {
+    "acronym": "CommonJS",
+    "fullName": "CommonJS Module System",
+    "fullNameJa": "コモンJSモジュール",
+    "description": "Node.jsで使われるモジュールシステム",
+    "related": "ESM, require, Node.js"
+  },
+  {
+    "acronym": "ESLint",
+    "fullName": "ECMAScript Linter",
+    "fullNameJa": "ECMAスクリプトリンター",
+    "description": "JavaScriptコードの問題を検出するツール",
+    "related": "Prettier, Lint, Code Quality"
+  },
+  {
+    "acronym": "Prettier",
+    "fullName": "Code Formatter Prettier",
+    "fullNameJa": "プリティア",
+    "description": "コードを自動整形するフォーマッター",
+    "related": "ESLint, Formatter, Code Style"
+  },
+  {
+    "acronym": "Webpack",
+    "fullName": "Module Bundler Webpack",
+    "fullNameJa": "ウェブパック",
+    "description": "JSやアセットをバンドルするツール",
+    "related": "Vite, Bundler, Build Tool"
+  },
+  {
+    "acronym": "Vite",
+    "fullName": "Next Generation Frontend Tooling",
+    "fullNameJa": "ヴィート",
+    "description": "高速な次世代フロントエンドビルドツール",
+    "related": "Webpack, ESBuild, Dev Server"
+  },
+  {
+    "acronym": "npm",
+    "fullName": "Node Package Manager",
+    "fullNameJa": "ノードパッケージマネージャー",
+    "description": "Node.jsのパッケージ管理ツール",
+    "related": "yarn, pnpm, Node.js"
+  },
+  {
+    "acronym": "yarn",
+    "fullName": "Yet Another Resource Negotiator",
+    "fullNameJa": "ヤーン",
+    "description": "高速なJavaScriptパッケージマネージャー",
+    "related": "npm, pnpm, Package Manager"
+  },
+  {
+    "acronym": "pnpm",
+    "fullName": "Performant npm",
+    "fullNameJa": "パフォーマントnpm",
+    "description": "ディスク効率の良いパッケージマネージャー",
+    "related": "npm, yarn, Package Manager"
+  },
+  {
+    "acronym": "Node.js",
+    "fullName": "Node JavaScript Runtime",
+    "fullNameJa": "ノードJS",
+    "description": "サーバー側で動くJavaScript実行環境",
+    "related": "npm, V8, Backend"
+  },
+  {
+    "acronym": "Deno",
+    "fullName": "Secure JavaScript Runtime",
+    "fullNameJa": "ディノ",
+    "description": "セキュアなNode.js代替ランタイム",
+    "related": "Node.js, TypeScript, Runtime"
+  },
+  {
+    "acronym": "Bun",
+    "fullName": "Fast JavaScript Runtime",
+    "fullNameJa": "バン",
+    "description": "超高速なJavaScript実行環境",
+    "related": "Node.js, Deno, Runtime"
+  },
+  {
+    "acronym": "V8",
+    "fullName": "V8 JavaScript Engine",
+    "fullNameJa": "V8エンジン",
+    "description": "GoogleのJavaScript実行エンジン",
+    "related": "Chrome, Node.js, Engine"
+  },
+  {
+    "acronym": "JIT",
+    "fullName": "Just-In-Time Compilation",
+    "fullNameJa": "ジャストインタイムコンパイル",
+    "description": "実行時にコードをコンパイルする技術",
+    "related": "V8, Performance, Compiler"
+  },
+  {
+    "acronym": "AOT",
+    "fullName": "Ahead-Of-Time Compilation",
+    "fullNameJa": "事前コンパイル",
+    "description": "実行前にコードをコンパイルする方式",
+    "related": "JIT, Angular, Compiler"
+  },
+  {
+    "acronym": "Tree Shaking",
+    "fullName": "Dead Code Elimination",
+    "fullNameJa": "ツリーシェイキング",
+    "description": "使われないコードを削除する最適化",
+    "related": "Webpack, Bundle Size, Optimization"
+  },
+  {
+    "acronym": "Code Splitting",
+    "fullName": "Dynamic Code Splitting",
+    "fullNameJa": "コード分割",
+    "description": "コードを必要な時に読み込む最適化",
+    "related": "Lazy Loading, Bundle, Performance"
+  },
+  {
+    "acronym": "Lazy Loading",
+    "fullName": "Lazy Loading Pattern",
+    "fullNameJa": "遅延読み込み",
+    "description": "必要になるまでリソースを読み込まない手法",
+    "related": "Code Splitting, Performance, Image"
+  },
+  {
+    "acronym": "Hydration",
+    "fullName": "Client Hydration",
+    "fullNameJa": "ハイドレーション",
+    "description": "SSRされたHTMLにJSで機能を付与する処理",
+    "related": "SSR, React, Next.js"
+  },
+  {
+    "acronym": "HMR",
+    "fullName": "Hot Module Replacement",
+    "fullNameJa": "ホットモジュール置換",
+    "description": "コード変更を即座に反映する開発機能",
+    "related": "Vite, Webpack, Dev Server"
+  },
+  {
+    "acronym": "SWC",
+    "fullName": "Speedy Web Compiler",
+    "fullNameJa": "スピーディーウェブコンパイラ",
+    "description": "Rust製の超高速JavaScriptコンパイラ",
+    "related": "Babel, Rust, Compiler"
+  },
+  {
+    "acronym": "esbuild",
+    "fullName": "Extremely Fast Bundler",
+    "fullNameJa": "イーエスビルド",
+    "description": "Go製の超高速バンドラー",
+    "related": "Webpack, Vite, Bundler"
+  },
+  {
+    "acronym": "Turbopack",
+    "fullName": "Turbopack Bundler",
+    "fullNameJa": "ターボパック",
+    "description": "Vercel製の超高速バンドラー",
+    "related": "Webpack, Next.js, Rust"
   }
 ]
