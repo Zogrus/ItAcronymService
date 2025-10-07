@@ -1,0 +1,905 @@
+[
+  {
+    "acronym": "MVP",
+    "fullName": "Minimum Viable Product",
+    "fullNameJa": "実用最小限の製品",
+    "description": "実運用前提の最小機能セットで検証する考え方",
+    "related": "PoC, Prototype, MLP"
+  },
+  {
+    "acronym": "API",
+    "fullName": "Application Programming Interface",
+    "fullNameJa": "アプリケーションプログラミングインターフェース",
+    "description": "ソフトウェア間でデータをやり取りする仕組み",
+    "related": "REST, GraphQL, SDK"
+  },
+  {
+    "acronym": "REST",
+    "fullName": "Representational State Transfer",
+    "fullNameJa": "リソース指向アーキテクチャ",
+    "description": "HTTPメソッドを使ったWeb API設計スタイル",
+    "related": "API, HTTP, CRUD"
+  },
+  {
+    "acronym": "CRUD",
+    "fullName": "Create, Read, Update, Delete",
+    "fullNameJa": "基本4操作",
+    "description": "データ操作の基本となる4つの処理",
+    "related": "REST, SQL, HTTP"
+  },
+  {
+    "acronym": "CI/CD",
+    "fullName": "Continuous Integration / Continuous Delivery",
+    "fullNameJa": "継続的インテグレーション/デリバリー",
+    "description": "コードの統合とデプロイを自動化する手法",
+    "related": "DevOps, Pipeline, GitHub Actions"
+  },
+  {
+    "acronym": "DevOps",
+    "fullName": "Development and Operations",
+    "fullNameJa": "開発と運用の融合",
+    "description": "開発と運用を統合して高速リリースを実現",
+    "related": "CI/CD, Agile, SRE"
+  },
+  {
+    "acronym": "SRE",
+    "fullName": "Site Reliability Engineering",
+    "fullNameJa": "サイト信頼性エンジニアリング",
+    "description": "システムの信頼性を追求する運用手法",
+    "related": "DevOps, Monitoring, SLA"
+  },
+  {
+    "acronym": "SLA",
+    "fullName": "Service Level Agreement",
+    "fullNameJa": "サービスレベル合意",
+    "description": "サービス品質の保証レベルを定める契約",
+    "related": "SLO, SLI, Uptime"
+  },
+  {
+    "acronym": "SLO",
+    "fullName": "Service Level Objective",
+    "fullNameJa": "サービスレベル目標",
+    "description": "達成すべきサービス品質の具体的な数値目標",
+    "related": "SLA, SLI, KPI"
+  },
+  {
+    "acronym": "SLI",
+    "fullName": "Service Level Indicator",
+    "fullNameJa": "サービスレベル指標",
+    "description": "サービス品質を測定する具体的な指標",
+    "related": "SLA, SLO, Metrics"
+  },
+  {
+    "acronym": "K8s",
+    "fullName": "Kubernetes",
+    "fullNameJa": "コンテナオーケストレーション",
+    "description": "コンテナを大規模管理する基盤システム",
+    "related": "Docker, Container, Orchestration"
+  },
+  {
+    "acronym": "LLM",
+    "fullName": "Large Language Model",
+    "fullNameJa": "大規模言語モデル",
+    "description": "膨大なテキストで学習した対話AI",
+    "related": "GPT, AI, NLP"
+  },
+  {
+    "acronym": "RAG",
+    "fullName": "Retrieval-Augmented Generation",
+    "fullNameJa": "検索拡張生成",
+    "description": "外部知識を参照してLLMの回答精度を向上",
+    "related": "LLM, Vector DB, Embedding"
+  },
+  {
+    "acronym": "NLP",
+    "fullName": "Natural Language Processing",
+    "fullNameJa": "自然言語処理",
+    "description": "人間の言語をコンピュータで理解・生成する技術",
+    "related": "LLM, AI, ML"
+  },
+  {
+    "acronym": "ML",
+    "fullName": "Machine Learning",
+    "fullNameJa": "機械学習",
+    "description": "データから規則性を学習し予測するAI技術",
+    "related": "AI, DL, Model"
+  },
+  {
+    "acronym": "DL",
+    "fullName": "Deep Learning",
+    "fullNameJa": "深層学習",
+    "description": "多層ニューラルネットで複雑なパターンを学習",
+    "related": "ML, AI, Neural Network"
+  },
+  {
+    "acronym": "AI",
+    "fullName": "Artificial Intelligence",
+    "fullNameJa": "人工知能",
+    "description": "人間の知的な振る舞いを模倣するシステム",
+    "related": "ML, DL, LLM"
+  },
+  {
+    "acronym": "MVC",
+    "fullName": "Model View Controller",
+    "fullNameJa": "モデル・ビュー・コントローラー",
+    "description": "UIとデータを分離するアーキテクチャパターン",
+    "related": "MVVM, MVP, Design Pattern"
+  },
+  {
+    "acronym": "MVVM",
+    "fullName": "Model-View-ViewModel",
+    "fullNameJa": "モデル・ビュー・ビューモデル",
+    "description": "UIとロジックの分離を強化した設計手法",
+    "related": "MVC, Data Binding"
+  },
+  {
+    "acronym": "ORM",
+    "fullName": "Object-Relational Mapping",
+    "fullNameJa": "オブジェクト関係マッピング",
+    "description": "オブジェクトとDBテーブルを紐付ける技術",
+    "related": "SQL, Database, Prisma"
+  },
+  {
+    "acronym": "SQL",
+    "fullName": "Structured Query Language",
+    "fullNameJa": "構造化問い合わせ言語",
+    "description": "リレーショナルDBを操作する言語",
+    "related": "Database, ORM, Query"
+  },
+  {
+    "acronym": "NoSQL",
+    "fullName": "Not Only SQL",
+    "fullNameJa": "非リレーショナルDB",
+    "description": "柔軟なスキーマで大量データを扱うDB",
+    "related": "MongoDB, DynamoDB, Database"
+  },
+  {
+    "acronym": "JWT",
+    "fullName": "JSON Web Token",
+    "fullNameJa": "JSON形式のトークン",
+    "description": "認証情報を安全に伝送するトークン形式",
+    "related": "Auth, OAuth, Session"
+  },
+  {
+    "acronym": "OAuth",
+    "fullName": "Open Authorization",
+    "fullNameJa": "認可フレームワーク",
+    "description": "第三者アプリに権限を委譲する仕組み",
+    "related": "JWT, Auth, SSO"
+  },
+  {
+    "acronym": "SSO",
+    "fullName": "Single Sign-On",
+    "fullNameJa": "シングルサインオン",
+    "description": "一度のログインで複数サービスにアクセス",
+    "related": "OAuth, SAML, Auth"
+  },
+  {
+    "acronym": "SAML",
+    "fullName": "Security Assertion Markup Language",
+    "fullNameJa": "セキュリティ表明マークアップ言語",
+    "description": "認証情報を安全に交換するXMLベースの規格",
+    "related": "SSO, OAuth, Auth"
+  },
+  {
+    "acronym": "TDD",
+    "fullName": "Test-Driven Development",
+    "fullNameJa": "テスト駆動開発",
+    "description": "テストを先に書いてから実装するスタイル",
+    "related": "Unit Test, BDD, Testing"
+  },
+  {
+    "acronym": "BDD",
+    "fullName": "Behavior-Driven Development",
+    "fullNameJa": "振る舞い駆動開発",
+    "description": "ユーザー視点の振る舞いでテストを記述",
+    "related": "TDD, Testing, Cucumber"
+  },
+  {
+    "acronym": "XSS",
+    "fullName": "Cross-Site Scripting",
+    "fullNameJa": "クロスサイトスクリプティング",
+    "description": "悪意あるスクリプトを埋め込む攻撃",
+    "related": "CSRF, Security, Sanitize"
+  },
+  {
+    "acronym": "CSRF",
+    "fullName": "Cross-Site Request Forgery",
+    "fullNameJa": "クロスサイトリクエストフォージェリ",
+    "description": "ユーザーの意図しないリクエストを送らせる攻撃",
+    "related": "XSS, Security, Token"
+  },
+  {
+    "acronym": "CORS",
+    "fullName": "Cross-Origin Resource Sharing",
+    "fullNameJa": "オリジン間リソース共有",
+    "description": "異なるオリジンからのアクセスを制御する仕組み",
+    "related": "HTTP, Security, API"
+  },
+  {
+    "acronym": "CDN",
+    "fullName": "Content Delivery Network",
+    "fullNameJa": "コンテンツ配信ネットワーク",
+    "description": "地理的に分散したサーバーで高速配信",
+    "related": "Cache, Performance, Edge"
+  },
+  {
+    "acronym": "DNS",
+    "fullName": "Domain Name System",
+    "fullNameJa": "ドメイン名システム",
+    "description": "ドメイン名をIPアドレスに変換する仕組み",
+    "related": "URL, IP, Network"
+  },
+  {
+    "acronym": "IP",
+    "fullName": "Internet Protocol",
+    "fullNameJa": "インターネットプロトコル",
+    "description": "ネットワーク上でデータを送受信する通信規約",
+    "related": "TCP, HTTP, Network"
+  },
+  {
+    "acronym": "TCP",
+    "fullName": "Transmission Control Protocol",
+    "fullNameJa": "伝送制御プロトコル",
+    "description": "信頼性の高いデータ送信を保証する通信規約",
+    "related": "IP, UDP, Network"
+  },
+  {
+    "acronym": "UDP",
+    "fullName": "User Datagram Protocol",
+    "fullNameJa": "ユーザーデータグラムプロトコル",
+    "description": "高速だが信頼性は低い通信プロトコル",
+    "related": "TCP, IP, Streaming"
+  },
+  {
+    "acronym": "HTTP",
+    "fullName": "HyperText Transfer Protocol",
+    "fullNameJa": "ハイパーテキスト転送プロトコル",
+    "description": "Webブラウザとサーバー間の通信規約",
+    "related": "HTTPS, REST, API"
+  },
+  {
+    "acronym": "HTTPS",
+    "fullName": "HyperText Transfer Protocol Secure",
+    "fullNameJa": "安全なHTTP通信",
+    "description": "SSL/TLSで暗号化されたHTTP通信",
+    "related": "HTTP, SSL, TLS"
+  },
+  {
+    "acronym": "SSL",
+    "fullName": "Secure Sockets Layer",
+    "fullNameJa": "セキュアソケットレイヤー",
+    "description": "通信を暗号化するプロトコル（TLSの前身）",
+    "related": "TLS, HTTPS, Certificate"
+  },
+  {
+    "acronym": "TLS",
+    "fullName": "Transport Layer Security",
+    "fullNameJa": "トランスポート層セキュリティ",
+    "description": "SSLの後継でより安全な暗号化通信",
+    "related": "SSL, HTTPS, Certificate"
+  },
+  {
+    "acronym": "SSH",
+    "fullName": "Secure Shell",
+    "fullNameJa": "セキュアシェル",
+    "description": "暗号化された安全なリモートログイン",
+    "related": "CLI, Linux, Remote"
+  },
+  {
+    "acronym": "CLI",
+    "fullName": "Command Line Interface",
+    "fullNameJa": "コマンドラインインターフェース",
+    "description": "テキストコマンドで操作するUI",
+    "related": "Terminal, Shell, GUI"
+  },
+  {
+    "acronym": "GUI",
+    "fullName": "Graphical User Interface",
+    "fullNameJa": "グラフィカルユーザーインターフェース",
+    "description": "視覚的に操作できるUI",
+    "related": "CLI, UX, UI"
+  },
+  {
+    "acronym": "UI",
+    "fullName": "User Interface",
+    "fullNameJa": "ユーザーインターフェース",
+    "description": "ユーザーと製品の接点となる画面や操作",
+    "related": "UX, GUI, Design"
+  },
+  {
+    "acronym": "UX",
+    "fullName": "User Experience",
+    "fullNameJa": "ユーザーエクスペリエンス",
+    "description": "製品を使った時の総合的な体験",
+    "related": "UI, Design, Usability"
+  },
+  {
+    "acronym": "SPA",
+    "fullName": "Single Page Application",
+    "fullNameJa": "シングルページアプリケーション",
+    "description": "1ページで動的に切り替わるWebアプリ",
+    "related": "React, Vue, Angular"
+  },
+  {
+    "acronym": "SSR",
+    "fullName": "Server-Side Rendering",
+    "fullNameJa": "サーバーサイドレンダリング",
+    "description": "サーバー側でHTMLを生成して返す方式",
+    "related": "CSR, Next.js, SEO"
+  },
+  {
+    "acronym": "CSR",
+    "fullName": "Client-Side Rendering",
+    "fullNameJa": "クライアントサイドレンダリング",
+    "description": "ブラウザ側でJavaScriptがHTMLを生成",
+    "related": "SSR, SPA, React"
+  },
+  {
+    "acronym": "SEO",
+    "fullName": "Search Engine Optimization",
+    "fullNameJa": "検索エンジン最適化",
+    "description": "検索結果で上位表示されるための施策",
+    "related": "SSR, Meta Tags, Google"
+  },
+  {
+    "acronym": "PWA",
+    "fullName": "Progressive Web App",
+    "fullNameJa": "プログレッシブウェブアプリ",
+    "description": "ネイティブアプリ風に動作するWebアプリ",
+    "related": "Service Worker, Offline, Mobile"
+  },
+  {
+    "acronym": "SDK",
+    "fullName": "Software Development Kit",
+    "fullNameJa": "ソフトウェア開発キット",
+    "description": "特定プラットフォーム向けの開発ツール集",
+    "related": "API, Library, Framework"
+  },
+  {
+    "acronym": "IDE",
+    "fullName": "Integrated Development Environment",
+    "fullNameJa": "統合開発環境",
+    "description": "コード編集・実行・デバッグを統合したツール",
+    "related": "VSCode, Editor, Debug"
+  },
+  {
+    "acronym": "VCS",
+    "fullName": "Version Control System",
+    "fullNameJa": "バージョン管理システム",
+    "description": "ソースコードの変更履歴を管理する仕組み",
+    "related": "Git, SVN, Repository"
+  },
+  {
+    "acronym": "PR",
+    "fullName": "Pull Request",
+    "fullNameJa": "プルリクエスト",
+    "description": "コード変更をレビュー依頼する機能",
+    "related": "Git, Code Review, Merge"
+  },
+  {
+    "acronym": "IaC",
+    "fullName": "Infrastructure as Code",
+    "fullNameJa": "コードとしてのインフラ",
+    "description": "インフラをコードで定義・管理する手法",
+    "related": "Terraform, CloudFormation, DevOps"
+  },
+  {
+    "acronym": "VM",
+    "fullName": "Virtual Machine",
+    "fullNameJa": "仮想マシン",
+    "description": "物理サーバー上で動く仮想的なコンピュータ",
+    "related": "Container, Docker, Hypervisor"
+  },
+  {
+    "acronym": "JSON",
+    "fullName": "JavaScript Object Notation",
+    "fullNameJa": "JavaScript形式のデータ記法",
+    "description": "軽量で読みやすいデータ交換フォーマット",
+    "related": "API, XML, YAML"
+  },
+  {
+    "acronym": "XML",
+    "fullName": "eXtensible Markup Language",
+    "fullNameJa": "拡張可能なマークアップ言語",
+    "description": "タグでデータ構造を表現する形式",
+    "related": "JSON, HTML, SOAP"
+  },
+  {
+    "acronym": "YAML",
+    "fullName": "YAML Ain't Markup Language",
+    "fullNameJa": "人間にやさしい設定ファイル形式",
+    "description": "インデントで階層を表現する設定形式",
+    "related": "JSON, Config, Docker Compose"
+  },
+  {
+    "acronym": "GraphQL",
+    "fullName": "Graph Query Language",
+    "fullNameJa": "グラフクエリ言語",
+    "description": "必要なデータだけ取得できるクエリ言語",
+    "related": "API, REST, Query"
+  },
+  {
+    "acronym": "gRPC",
+    "fullName": "gRPC Remote Procedure Call",
+    "fullNameJa": "高性能RPC",
+    "description": "高速で型安全なRPCフレームワーク",
+    "related": "API, Protocol Buffers, Microservices"
+  },
+  {
+    "acronym": "RPC",
+    "fullName": "Remote Procedure Call",
+    "fullNameJa": "リモートプロシージャコール",
+    "description": "遠隔のサーバーの関数を呼び出す仕組み",
+    "related": "gRPC, API, Network"
+  },
+  {
+    "acronym": "WebSocket",
+    "fullName": "WebSocket Protocol",
+    "fullNameJa": "双方向通信プロトコル",
+    "description": "リアルタイムな双方向通信を実現",
+    "related": "HTTP, Real-time, Chat"
+  },
+  {
+    "acronym": "PoC",
+    "fullName": "Proof of Concept",
+    "fullNameJa": "概念実証",
+    "description": "アイデアの実現可能性を検証する試作",
+    "related": "MVP, Prototype, Validation"
+  },
+  {
+    "acronym": "KPI",
+    "fullName": "Key Performance Indicator",
+    "fullNameJa": "重要業績評価指標",
+    "description": "目標達成度を測る重要な指標",
+    "related": "Metrics, SLO, Dashboard"
+  },
+  {
+    "acronym": "DRY",
+    "fullName": "Don't Repeat Yourself",
+    "fullNameJa": "同じコードを繰り返さない原則",
+    "description": "重複を避けて保守性を高める設計原則",
+    "related": "SOLID, Refactoring, Clean Code"
+  },
+  {
+    "acronym": "SOLID",
+    "fullName": "Single responsibility, Open-closed, Liskov substitution, Interface segregation, Dependency inversion",
+    "fullNameJa": "オブジェクト指向設計の5原則",
+    "description": "保守しやすい設計のための5つの原則",
+    "related": "OOP, Design Pattern, Clean Code"
+  },
+  {
+    "acronym": "KISS",
+    "fullName": "Keep It Simple, Stupid",
+    "fullNameJa": "シンプルに保つ原則",
+    "description": "複雑さを避けてシンプルに設計する",
+    "related": "DRY, YAGNI, Clean Code"
+  },
+  {
+    "acronym": "YAGNI",
+    "fullName": "You Aren't Gonna Need It",
+    "fullNameJa": "必要になるまで実装しない原則",
+    "description": "今必要ない機能は作らない",
+    "related": "KISS, Agile, Lean"
+  },
+  {
+    "acronym": "ACID",
+    "fullName": "Atomicity, Consistency, Isolation, Durability",
+    "fullNameJa": "トランザクションの4特性",
+    "description": "DBトランザクションが満たすべき性質",
+    "related": "Database, Transaction, SQL"
+  },
+  {
+    "acronym": "BASE",
+    "fullName": "Basically Available, Soft state, Eventually consistent",
+    "fullNameJa": "分散DBの設計思想",
+    "description": "可用性を重視した結果整合性モデル",
+    "related": "NoSQL, CAP, Distributed"
+  },
+  {
+    "acronym": "CAP",
+    "fullName": "Consistency, Availability, Partition tolerance",
+    "fullNameJa": "分散システムの3特性",
+    "description": "3つのうち2つしか同時に達成できない定理",
+    "related": "BASE, Distributed, Database"
+  },
+  {
+    "acronym": "RDB",
+    "fullName": "Relational Database",
+    "fullNameJa": "リレーショナルデータベース",
+    "description": "表形式でデータを管理する構造化データベース",
+    "related": "RDBMS, SQL, NoSQL"
+  },
+  {
+    "acronym": "RDBMS",
+    "fullName": "Relational Database Management System",
+    "fullNameJa": "リレーショナルデータベース管理システム",
+    "description": "RDBを管理・操作するソフトウェア",
+    "related": "MySQL, PostgreSQL, SQL"
+  },
+  {
+    "acronym": "AJAX",
+    "fullName": "Asynchronous JavaScript and XML",
+    "fullNameJa": "非同期通信技術",
+    "description": "ページ遷移なしでサーバーと通信する技術",
+    "related": "Fetch API, XHR, JSON"
+  },
+  {
+    "acronym": "DOM",
+    "fullName": "Document Object Model",
+    "fullNameJa": "ドキュメントオブジェクトモデル",
+    "description": "HTMLやXMLをツリー構造で操作する仕組み",
+    "related": "JavaScript, HTML, Browser"
+  },
+  {
+    "acronym": "CDN",
+    "fullName": "Content Delivery Network",
+    "fullNameJa": "コンテンツ配信ネットワーク",
+    "description": "世界中に分散したサーバーで高速配信",
+    "related": "Cache, Performance, Cloudflare"
+  },
+  {
+    "acronym": "WAF",
+    "fullName": "Web Application Firewall",
+    "fullNameJa": "Webアプリケーションファイアウォール",
+    "description": "Webアプリへの攻撃を防御するセキュリティ層",
+    "related": "XSS, SQL Injection, Security"
+  },
+  {
+    "acronym": "DDoS",
+    "fullName": "Distributed Denial of Service",
+    "fullNameJa": "分散型サービス妨害攻撃",
+    "description": "大量のリクエストでサービスを停止させる攻撃",
+    "related": "DoS, Security, CDN"
+  },
+  {
+    "acronym": "MFA",
+    "fullName": "Multi-Factor Authentication",
+    "fullNameJa": "多要素認証",
+    "description": "複数の認証方法を組み合わせたセキュリティ",
+    "related": "2FA, Auth, Security"
+  },
+  {
+    "acronym": "2FA",
+    "fullName": "Two-Factor Authentication",
+    "fullNameJa": "二要素認証",
+    "description": "パスワード+もう1つの要素で認証する方式",
+    "related": "MFA, OTP, Security"
+  },
+  {
+    "acronym": "OTP",
+    "fullName": "One-Time Password",
+    "fullNameJa": "ワンタイムパスワード",
+    "description": "1回限り有効な使い捨てパスワード",
+    "related": "2FA, TOTP, Security"
+  },
+  {
+    "acronym": "TOTP",
+    "fullName": "Time-based One-Time Password",
+    "fullNameJa": "時間ベースワンタイムパスワード",
+    "description": "時刻同期で生成される認証コード",
+    "related": "OTP, 2FA, Google Authenticator"
+  },
+  {
+    "acronym": "HTTPS",
+    "fullName": "HyperText Transfer Protocol Secure",
+    "fullNameJa": "安全なHTTP通信",
+    "description": "SSL/TLSで暗号化されたHTTP通信",
+    "related": "HTTP, SSL, TLS"
+  },
+  {
+    "acronym": "WSS",
+    "fullName": "WebSocket Secure",
+    "fullNameJa": "安全なWebSocket通信",
+    "description": "TLSで暗号化されたWebSocket接続",
+    "related": "WebSocket, TLS, Real-time"
+  },
+  {
+    "acronym": "SPA",
+    "fullName": "Single Page Application",
+    "fullNameJa": "シングルページアプリケーション",
+    "description": "1ページで動的に切り替わるWebアプリ",
+    "related": "React, Vue, CSR"
+  },
+  {
+    "acronym": "SSR",
+    "fullName": "Server-Side Rendering",
+    "fullNameJa": "サーバーサイドレンダリング",
+    "description": "サーバー側でHTMLを生成して返す方式",
+    "related": "CSR, Next.js, SEO"
+  },
+  {
+    "acronym": "CSR",
+    "fullName": "Client-Side Rendering",
+    "fullNameJa": "クライアントサイドレンダリング",
+    "description": "ブラウザ側でJavaScriptがHTMLを生成",
+    "related": "SSR, SPA, React"
+  },
+  {
+    "acronym": "ISR",
+    "fullName": "Incremental Static Regeneration",
+    "fullNameJa": "段階的静的再生成",
+    "description": "静的ページを必要に応じて再生成する手法",
+    "related": "SSG, Next.js, Performance"
+  },
+  {
+    "acronym": "SSG",
+    "fullName": "Static Site Generation",
+    "fullNameJa": "静的サイト生成",
+    "description": "ビルド時にHTMLを事前生成する方式",
+    "related": "ISR, JAMstack, Next.js"
+  },
+  {
+    "acronym": "JAMstack",
+    "fullName": "JavaScript, APIs, and Markup",
+    "fullNameJa": "モダンWeb開発スタック",
+    "description": "静的サイト+API+JSで構築するアーキテクチャ",
+    "related": "SSG, Vercel, Netlify"
+  },
+  {
+    "acronym": "CDN",
+    "fullName": "Content Delivery Network",
+    "fullNameJa": "コンテンツ配信ネットワーク",
+    "description": "地理的に分散したサーバーで高速配信",
+    "related": "Cache, Edge, Performance"
+  },
+  {
+    "acronym": "FCP",
+    "fullName": "First Contentful Paint",
+    "fullNameJa": "初回コンテンツ描画",
+    "description": "最初のコンテンツが表示されるまでの時間",
+    "related": "LCP, Performance, Core Web Vitals"
+  },
+  {
+    "acronym": "LCP",
+    "fullName": "Largest Contentful Paint",
+    "fullNameJa": "最大コンテンツ描画",
+    "description": "最も大きな要素が表示されるまでの時間",
+    "related": "FCP, Performance, Core Web Vitals"
+  },
+  {
+    "acronym": "CLS",
+    "fullName": "Cumulative Layout Shift",
+    "fullNameJa": "累積レイアウトシフト",
+    "description": "ページ読み込み中のレイアウトのズレ量",
+    "related": "Core Web Vitals, UX, Performance"
+  },
+  {
+    "acronym": "FID",
+    "fullName": "First Input Delay",
+    "fullNameJa": "初回入力遅延",
+    "description": "ユーザー操作から応答までの遅延時間",
+    "related": "INP, Performance, Core Web Vitals"
+  },
+  {
+    "acronym": "INP",
+    "fullName": "Interaction to Next Paint",
+    "fullNameJa": "操作から次の描画まで",
+    "description": "ユーザー操作への応答性を測る指標",
+    "related": "FID, Performance, Core Web Vitals"
+  },
+  {
+    "acronym": "TTFB",
+    "fullName": "Time to First Byte",
+    "fullNameJa": "最初の1バイト到達時間",
+    "description": "サーバーからの最初の応答までの時間",
+    "related": "Performance, Network, Server"
+  },
+  {
+    "acronym": "CORS",
+    "fullName": "Cross-Origin Resource Sharing",
+    "fullNameJa": "オリジン間リソース共有",
+    "description": "異なるオリジンからのアクセスを制御",
+    "related": "Security, API, HTTP"
+  },
+  {
+    "acronym": "CSRF",
+    "fullName": "Cross-Site Request Forgery",
+    "fullNameJa": "クロスサイトリクエストフォージェリ",
+    "description": "ユーザーの意図しないリクエストを送らせる攻撃",
+    "related": "XSS, Security, Token"
+  },
+  {
+    "acronym": "XSS",
+    "fullName": "Cross-Site Scripting",
+    "fullNameJa": "クロスサイトスクリプティング",
+    "description": "悪意あるスクリプトを埋め込む攻撃",
+    "related": "CSRF, Security, Sanitize"
+  },
+  {
+    "acronym": "SQL Injection",
+    "fullName": "SQL Injection Attack",
+    "fullNameJa": "SQLインジェクション攻撃",
+    "description": "不正なSQL文を注入してDB操作する攻撃",
+    "related": "Security, Database, Prepared Statement"
+  },
+  {
+    "acronym": "DTO",
+    "fullName": "Data Transfer Object",
+    "fullNameJa": "データ転送オブジェクト",
+    "description": "層間でデータを運ぶための専用オブジェクト",
+    "related": "API, Design Pattern, Validation"
+  },
+  {
+    "acronym": "DAO",
+    "fullName": "Data Access Object",
+    "fullNameJa": "データアクセスオブジェクト",
+    "description": "DB操作を抽象化するデザインパターン",
+    "related": "ORM, Database, Repository"
+  },
+  {
+    "acronym": "MVC",
+    "fullName": "Model View Controller",
+    "fullNameJa": "モデル・ビュー・コントローラー",
+    "description": "UIとデータを分離するアーキテクチャパターン",
+    "related": "MVVM, Design Pattern, Separation"
+  },
+  {
+    "acronym": "MVVM",
+    "fullName": "Model-View-ViewModel",
+    "fullNameJa": "モデル・ビュー・ビューモデル",
+    "description": "UIとロジックの分離を強化した設計手法",
+    "related": "MVC, Data Binding, Design Pattern"
+  },
+  {
+    "acronym": "CQRS",
+    "fullName": "Command Query Responsibility Segregation",
+    "fullNameJa": "コマンドクエリ責任分離",
+    "description": "参照と更新の処理を分離する設計パターン",
+    "related": "Event Sourcing, DDD, Architecture"
+  },
+  {
+    "acronym": "DDD",
+    "fullName": "Domain-Driven Design",
+    "fullNameJa": "ドメイン駆動設計",
+    "description": "ビジネスロジックを中心に設計する手法",
+    "related": "CQRS, Architecture, Entity"
+  },
+  {
+    "acronym": "HATEOAS",
+    "fullName": "Hypermedia As The Engine Of Application State",
+    "fullNameJa": "ハイパーメディア駆動のREST",
+    "description": "APIレスポンスに次のアクションを含める設計",
+    "related": "REST, API, Hypermedia"
+  },
+  {
+    "acronym": "CRUD",
+    "fullName": "Create, Read, Update, Delete",
+    "fullNameJa": "基本4操作",
+    "description": "データ操作の基本となる4つの処理",
+    "related": "REST, SQL, API"
+  },
+  {
+    "acronym": "BLOB",
+    "fullName": "Binary Large Object",
+    "fullNameJa": "バイナリラージオブジェクト",
+    "description": "画像や動画などの大きなバイナリデータ",
+    "related": "Database, Storage, File"
+  },
+  {
+    "acronym": "UUID",
+    "fullName": "Universally Unique Identifier",
+    "fullNameJa": "汎用一意識別子",
+    "description": "重複しない一意なID生成方式",
+    "related": "GUID, Database, Primary Key"
+  },
+  {
+    "acronym": "GUID",
+    "fullName": "Globally Unique Identifier",
+    "fullNameJa": "グローバル一意識別子",
+    "description": "UUIDのMicrosoft版の呼称",
+    "related": "UUID, Identifier, Windows"
+  },
+  {
+    "acronym": "WYSIWYG",
+    "fullName": "What You See Is What You Get",
+    "fullNameJa": "見たまま編集",
+    "description": "編集画面と実際の表示が同じエディタ",
+    "related": "Editor, CMS, UI"
+  },
+  {
+    "acronym": "CMS",
+    "fullName": "Content Management System",
+    "fullNameJa": "コンテンツ管理システム",
+    "description": "Webコンテンツを簡単に管理できるシステム",
+    "related": "WordPress, Headless CMS, Admin"
+  },
+  {
+    "acronym": "Headless CMS",
+    "fullName": "Headless Content Management System",
+    "fullNameJa": "ヘッドレスCMS",
+    "description": "フロントエンドを持たずAPI経由で配信するCMS",
+    "related": "CMS, JAMstack, API"
+  },
+  {
+    "acronym": "SaaS",
+    "fullName": "Software as a Service",
+    "fullNameJa": "サービスとしてのソフトウェア",
+    "description": "クラウド上で提供されるソフトウェア",
+    "related": "PaaS, IaaS, Cloud"
+  },
+  {
+    "acronym": "PaaS",
+    "fullName": "Platform as a Service",
+    "fullNameJa": "サービスとしてのプラットフォーム",
+    "description": "開発環境を提供するクラウドサービス",
+    "related": "SaaS, IaaS, Heroku"
+  },
+  {
+    "acronym": "IaaS",
+    "fullName": "Infrastructure as a Service",
+    "fullNameJa": "サービスとしてのインフラ",
+    "description": "サーバーやネットワークを提供するクラウド",
+    "related": "SaaS, PaaS, AWS"
+  },
+  {
+    "acronym": "FaaS",
+    "fullName": "Function as a Service",
+    "fullNameJa": "サービスとしての関数",
+    "description": "関数単位で実行できるサーバーレス環境",
+    "related": "Serverless, Lambda, Cloud Functions"
+  },
+  {
+    "acronym": "S3",
+    "fullName": "Simple Storage Service",
+    "fullNameJa": "シンプルストレージサービス",
+    "description": "AWSのオブジェクトストレージサービス",
+    "related": "AWS, Storage, Bucket"
+  },
+  {
+    "acronym": "EC2",
+    "fullName": "Elastic Compute Cloud",
+    "fullNameJa": "エラスティックコンピュートクラウド",
+    "description": "AWSの仮想サーバーサービス",
+    "related": "AWS, VM, Cloud"
+  },
+  {
+    "acronym": "RDS",
+    "fullName": "Relational Database Service",
+    "fullNameJa": "リレーショナルデータベースサービス",
+    "description": "AWSのマネージドDB向けサービス",
+    "related": "AWS, Database, MySQL"
+  },
+  {
+    "acronym": "VPC",
+    "fullName": "Virtual Private Cloud",
+    "fullNameJa": "仮想プライベートクラウド",
+    "description": "クラウド上の独立したネットワーク空間",
+    "related": "AWS, Network, Security"
+  },
+  {
+    "acronym": "ALB",
+    "fullName": "Application Load Balancer",
+    "fullNameJa": "アプリケーションロードバランサー",
+    "description": "HTTP/HTTPSレベルで負荷分散するLB",
+    "related": "AWS, Load Balancer, ELB"
+  },
+  {
+    "acronym": "ELB",
+    "fullName": "Elastic Load Balancing",
+    "fullNameJa": "エラスティックロードバランシング",
+    "description": "AWSの負荷分散サービスの総称",
+    "related": "AWS, ALB, NLB"
+  },
+  {
+    "acronym": "VPN",
+    "fullName": "Virtual Private Network",
+    "fullNameJa": "仮想プライベートネットワーク",
+    "description": "暗号化された安全な通信経路を構築",
+    "related": "Security, Network, Tunnel"
+  },
+  {
+    "acronym": "NAT",
+    "fullName": "Network Address Translation",
+    "fullNameJa": "ネットワークアドレス変換",
+    "description": "プライベートIPとグローバルIPを変換",
+    "related": "Network, IP, Gateway"
+  },
+  {
+    "acronym": "DHCP",
+    "fullName": "Dynamic Host Configuration Protocol",
+    "fullNameJa": "動的ホスト構成プロトコル",
+    "description": "IPアドレスを自動割り当てするプロトコル",
+    "related": "Network, IP, Router"
+  }
+]
